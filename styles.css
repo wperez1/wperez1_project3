@@ -108,6 +108,14 @@ img {
   border-radius: 5px;
 }
 
+#map {
+  height: 500px;
+  width: 100%;
+  margin: 2rem 0;
+  border-radius: 8px;
+  border: 2px solid #134577;
+}
+
 #resume-page {
   max-width: 800px;
 }
@@ -128,61 +136,83 @@ img {
   max-width: 900px;
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   body {
-    font-size: 1rem;
-    padding: 0 0.75rem;
-  }
-  
-  main {
-    padding: 1.5rem;
-  }
-  
-  h1 {
-    font-size: 2.2rem;
-  }
-  
-  h2 {
-    font-size: 1.6rem;
-  }
-  
-  nav ul {
-    flex-wrap: wrap;
-  }
-  
-  nav li {
-    margin: 0.5rem 1rem;
-  }
-}
-
-@media (min-width: 1025px) {
-  /* Desktop styles */
-  body {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
+    padding: 0 2rem;
   }
   
   main {
     padding: 2.5rem;
+    margin: 2rem auto;
   }
   
   h1 {
     font-size: 2.8rem;
+    margin-top: 1.5rem;
   }
   
   h2 {
     font-size: 2rem;
+    margin-top: 2rem;
+  }
+  
+  nav ul {
+    padding: 1.2rem 0;
   }
   
   nav li {
     margin: 0 2rem;
   }
   
-  nav a {
-    padding: 0.75rem 1.25rem;
+  #map {
+    height: 600px;
+    margin: 2.5rem 0;
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 1024px) {
+  /* Desktop screens */
+  body {
+    font-size: 1.15rem;
+    padding: 0 3rem;
+  }
+  
+  main {
+    padding: 3rem;
+    margin: 3rem auto;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+  
+  h2 {
+    font-size: 2.2rem;
+    margin-top: 2.5rem;
+  }
+  
+  nav ul {
+    padding: 1.5rem 0;
+  }
+  
+  nav li {
+    margin: 0 2.5rem;
+  }
+  
+  nav a {
+    padding: 0.75rem 1.25rem;
+    font-size: 1.1rem;
+  }
+  
+  #map {
+    height: 650px;
+    margin: 3rem 0;
+  }
+}
+
+@media (max-width: 767px) {
   body {
     padding: 0 0.5rem;
   }
@@ -224,5 +254,9 @@ img {
   
   main {
     padding: 0.5rem;
+  }
+  
+  #map {
+    height: 400px;
   }
 }
